@@ -1,0 +1,90 @@
+body {
+    background: #FFD0B5;
+    text-align: center;
+}
+
+blockquote {
+    width: 1000px;
+    float: right;
+    text-align: right;
+    font-family: Georgia, serif;;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+code {
+    float: left;
+    background-color: #805034;
+    text-align: center;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.dogPhoto {
+    float: right;
+    padding: 70px 20px 20px 30px;
+    margin-right: 50px;
+    width: 400px;
+    height: 450px;
+    box-shadow: 3px 3px #AB8B79, -1em 0 .4em #FFD6C4;
+}
+
+.name {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia;
+    height: 35px;
+    font-size: 150%;
+    background-color: #FFA069;
+    border: 1px solid #66554A;
+}
+
+.menu {
+    float: left;
+    margin: 2px;
+    width: 220px;
+    height: 800px;
+    font-family: Georgia, serif;;
+    background-color: #AB8B79;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.mainText {
+    width: 550px;
+    margin-top: 100px;
+    margin-left: 10px;
+    font-family: Georgia;
+    line-height: 32px;
+}
+
+#catalog {
+    width: 300px;
+    padding: 10px;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #D98859;
+    height: 25px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+    float: left;
+    width: 600px;
+    height: 500px;
+    padding: 15px;
+}
+
+footer {
+    width: 500px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
