@@ -3,14 +3,10 @@ body {
     text-align: center;
 }
 
-blockquote {
-    width: 1000px;
-    float: right;
-    text-align: right;
-    font-family: Georgia, serif;;
-    text-decoration: underline;
-    margin-top: 40px;
-    margin-bottom: 20px;
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 code {
@@ -22,8 +18,7 @@ code {
     margin-left: 80px;
 }
 
-.dogPhoto {
-    float: right;
+.dog-photo {
     padding: 70px 20px 20px 30px;
     margin-right: 50px;
     width: 400px;
@@ -42,18 +37,24 @@ code {
     border: 1px solid #66554A;
 }
 
+@media (max-width: 800px) {
+    .dogPhoto {
+        display: none;
+    }
+}
+
 .menu {
-    float: left;
     margin: 2px;
     width: 220px;
-    height: 800px;
+    height: 125vh;
     font-family: Georgia, serif;;
     background-color: #AB8B79;
     font-weight: bold;
     line-height: 1.5;
 }
 
-.mainText {
+.main-text {
+    padding-top: 200px;
     width: 550px;
     margin-top: 100px;
     margin-left: 10px;
@@ -73,18 +74,75 @@ code {
 }
 
 .box {
-    display: inline-block;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 600px;
-    height: 500px;
+    height: 750px;
     padding: 15px;
 }
 
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    width: 600px;
+    column-gap: 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 3px;
+    border: 1px solid #000;
+    background: #998579;
+    grid-template-areas:
+    'pet-name breed gender age pet-color additional-info'
+    'odd-cell11 odd-cell12 odd-cell13 odd-cell14 odd-cell15 odd-cell16'
+    'even-cell21 even-cell22 even-cell23 even-cell24 even-cell25 even-cell26'
+    'odd-cell31 odd-cell32 odd-cell33 odd-cell34 odd-cell35 odd-cell36'
+    'even-cell41 even-cell42 even-cell43 even-cell44 even-cell45 even-cell46';
+}
+
+.pet-name {
+    grid-area: pet-name;
+}
+
+.breed {
+    grid-area: breed;
+}
+
+.gender {
+    grid-area: gender;
+}
+
+.age {
+    grid-area: age;
+}
+
+.pet-color {
+    grid-area: pet-color;
+}
+
+.additional-info {
+    grid-area: additional-info;
+}
+
+[class*="modify"] {
+    background: #CC9778;
+}
+
+[class*="heading"] {
+    background: #33261F;
+    color: white;
+    font-style: italic;
+}
+
+[class*="even-cell"], [class*="odd-cell"] {
+    grid-area: auto;
+    align-content: center;
+}
+
 footer {
+    position: absolute;
+    top: 1020px;
+    left: 70vw;
+    bottom: 0;
     width: 500px;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 750px;
-    margin-left: auto;
-    margin-right: auto;
 }
