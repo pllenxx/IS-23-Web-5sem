@@ -38,7 +38,7 @@ code {
 }
 
 @media (max-width: 800px) {
-    .dogPhoto {
+    .dog-photo {
         display: none;
     }
 }
@@ -51,6 +51,21 @@ code {
     background-color: #AB8B79;
     font-weight: bold;
     line-height: 1.5;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+    color: #EAE1D4;
+}
+
+.nav-item:hover {
+    background: #3D352F;
+    color: #EAE1D4;
 }
 
 .main-text {
