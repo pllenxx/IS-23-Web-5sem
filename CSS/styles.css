@@ -38,7 +38,7 @@ code {
 }
 
 @media (max-width: 800px) {
-    .dogPhoto {
+    .dog-photo {
         display: none;
     }
 }
