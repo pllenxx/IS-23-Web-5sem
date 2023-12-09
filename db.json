@@ -1,0 +1,100 @@
+{
+  "catalog": [
+    {
+      "id": 1,
+      "title": "Кэтрин",
+      "origin": "Великобритания",
+      "image": "img/Katrine.png"
+    },
+    {
+      "id": 2,
+      "title": "Чарли",
+      "origin": "Канада",
+      "image": "img/Charly.png"
+    },
+    {
+      "id": 3,
+      "title": "Дженнифер",
+      "origin": "США",
+      "image": "img/Jennifer.png"
+    },
+    {
+      "id": 4,
+      "title": "Вуди",
+      "origin": "Россия",
+      "image": "img/Woody.png"
+    },
+    {
+      "id": 5,
+      "title": "София",
+      "origin": "Индия",
+      "image": "img/Sophia.png"
+    },
+    {
+      "id": 6,
+      "title": "Скарлетт",
+      "origin": "США",
+      "image": "img/Scarlett.png"
+    },
+    {
+      "id": 7,
+      "title": "Фрэдди",
+      "origin": "Тайланд",
+      "image": "img/Freddie.png"
+    },
+    {
+      "id": 8,
+      "title": "Лола",
+      "origin": "Иран",
+      "image": "img/Lola.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Риччи",
+      "origin": "США",
+      "image": "img/Richie.png"
+    },
+    {
+      "id": 10,
+      "title": "Джинни",
+      "origin": "Великобритания",
+      "image": "img/Jinnie.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Майк",
+      "origin": "Канада",
+      "image": "img/Mike.png"
+    },
+    {
+      "id": 12,
+      "title": "Ава",
+      "origin": "Эфиопия",
+      "image": "img/Ava.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Мисси",
+      "origin": "Россия",
+      "image": "img/Missie.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Алиса",
+      "origin": "Норвегия",
+      "image": "img/Alice.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Челси",
+      "origin": "Чехия",
+      "image": "img/Chelsie.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Кай",
+      "origin": "Бурма",
+      "image": "img/Kai.jpg"
+    }
+  ]
+}

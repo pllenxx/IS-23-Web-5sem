@@ -1,17 +1,8 @@
-function highlightActivePage() {
-    let currentPageUrl = document.location.href;
-    let url = new URL(currentPageUrl)
-    let relativePath = url.pathname
+document.addEventListener('DOMContentLoaded', () => {
+    let currentPage = document.location.pathname.split('/').pop().replace('.html', '');
+    let htmlElement = document.getElementById(currentPage);
 
-    let menuItems = document.querySelectorAll('body main div section aside nav p a .nav-item');
-
-    menuItems.forEach(function(menuItem) {
-        let menuItemLink = menuItem.getAttribute('href');
-
-        if (relativePath === menuItemLink) {
-            menuItem.classList.add('active');
-        }
-    })
-}
-
-document.addEventListener('DOMContentLoaded', () => highlightActivePage);
+    if (htmlElement) {
+        htmlElement.classList.add('active');
+    }
+});

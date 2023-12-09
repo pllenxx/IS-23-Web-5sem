@@ -1,0 +1,240 @@
+body {
+    background-image: url("data/bg.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-color: lightgray;
+    background-size: 110px 110px, cover;
+    background-repeat: repeat, no-repeat;
+    width: 1280px;
+    height: 908px;
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    gap: 200px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.main-name {
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: 1.92px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.description {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+@media (max-width: 800px) {
+    .dog-photo {
+        display: none;
+    }
+}
+
+.menu {
+    margin-top: 40px;
+    display: flex;
+    gap: 35px;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+link {
+    list-style: none;
+}
+
+.nav-item {
+    color: #CDCDCD;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+    text-decoration: none;
+}
+
+.border {
+    height: 3px;
+    align-self: stretch;
+    background: #F1CDB3;
+}
+
+.link-active {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    color: #FAFAFA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+
+.nav-item:hover {
+    color: #545454;
+    background: #FAFAFA;;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dog-photo {
+    width: 698px;
+    height: 728px;
+    flex-shrink: 0;
+    padding-left: 300px;
+    margin-right: 40px;
+    margin-top: 128px;
+}
+
+.content {
+    margin-top: 100px;
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+    margin-left: 40px;
+}
+
+#header-text {
+    width: 350px;
+    color: #FFF;
+    font-family: Georgia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57px;
+    margin-bottom: 21px;
+}
+
+#main-text {
+    color: #CDCDCD;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+#catalog {
+    display: flex;
+    padding: 15px 45px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    margin-top: 21px;
+}
+
+#button-text {
+    color:  #292929;
+    font-family: Georgia;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
+    text-decoration: none;
+}
+
+footer {
+    width: 1280px;
+    /*height: 350px;*/
+    flex-shrink: 0;
+    background-image: url("data/bg.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-color: lightgray;
+    background-size: 110px 110px, cover;
+    background-repeat: repeat, no-repeat;
+}
+
+.footer-content {
+    width: 1280px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+#footer-header {
+    color: #FFF;
+    font-family: Georgia;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+
+.footer-text{
+    color: #F1CDB3;
+    /* h4 */
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 23px */
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 800px) {
+    .dog-photo {
+        display: none;
+    }
+
+    .grid-container {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
