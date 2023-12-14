@@ -131,6 +131,7 @@ link {
     border-radius: 10px;
     position: relative;
     margin: 10px;
+    background: #FAFAFA;
 }
 
 .pet-card {
@@ -220,4 +221,46 @@ link {
 .preloader-contents {
     display: block;
     background: white;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.pets-slider {
+    width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.prev-button-arrow {
+    margin-top: 295px;
+    display: inline-flex;
+    padding: 23px 19px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+}
+
+.next-button-arrow {
+    margin-top: 295px;
+    display: inline-flex;
+    padding: 23px 19px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+}
+
+.arrow {
+    fill: #292929;
+    width: 14px;
+    height: 6px;
+}
+
+.arrow-photo {
+    margin: auto;
 }

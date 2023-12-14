@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const petsContainer = document.querySelector(".pets-grid-slider");
+    const petsContainer = document.querySelector(".pets-slider");
     const preloader = document.createElement("div");
     const numOfPreloaders = 5
     const preloaders = []
@@ -24,11 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             preloaders.forEach(preloader => preloader.style.display = "none")
             renderPets(data, petsContainer);
-            $('.pets-grid-slider').slick({
+            $('.pets-slider').slick({
                 slidesToShow: 3,
-                speed: 500,
                 infinite: true,
-                slidesToScroll: 3
+                slidesToScroll: 3,
+                prevArrow: $('.prev-button-arrow'),
+                nextArrow: $('.next-button-arrow')
             });
         })
         .catch(error => {
