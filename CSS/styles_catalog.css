@@ -264,3 +264,174 @@ link {
 .arrow-photo {
     margin: auto;
 }
+
+@media screen and (max-width: 1400px) {
+    .menu {
+        gap: 10px;
+    }
+    header {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        gap: 10px;
+    }
+    header {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        gap: 10px;
+    }
+    header {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        margin-top: 20px;
+    }
+    .heading {
+        margin-top: 200px;
+        font-size: 25px;
+    }
+
+    .pets-slider {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .prev-button-arrow,
+    .next-button-arrow,
+    .arrow-photo {
+        width: 8px;
+        height: 8px;
+    }
+    .wrapper {
+        height: 800px;
+    }
+
+    .slider-wrapper ul {
+        padding: 0;
+        display: flex;
+    }
+    .pet-card {
+        width: 100px;
+        height: 200px;
+    }
+    .learn-more-button {
+        margin-left: 100px;
+        gap: 2px;
+        padding: 15px 40px;
+    }
+    .pet-name {
+        margin-left: 100px;
+    }
+    .pet-origin {
+        margin-left: 100px;
+    }
+    .slick-slide img {
+        width: 200px;
+        margin-left: 3px;
+        height: 300px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pets-slider {
+        width: 80%;
+        overflow: hidden;
+    }
+    .pet-card {
+        width: 90px;
+        height: 10px;
+    }
+    .learn-more-button {
+        margin-left: 150px;
+    }
+    .pet-name {
+        margin-top: -200px;
+        margin-left: 140px;
+    }
+    .pet-origin {
+        margin-left: 140px;
+    }
+    .slick-slide img {
+        width: 200px;
+        margin-left: 15px;
+        height: 200px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pets-slider {
+        width: 80%;
+        overflow: hidden;
+    }
+    .pet-card {
+        width: 90px;
+        height: 10px;
+    }
+    .learn-more-button {
+        margin-left: 120px;
+    }
+    .pet-name {
+        margin-left: 120px;
+    }
+    .pet-origin {
+        margin-left: 120px;
+    }
+    .slick-slide img {
+        width: 180px;
+        margin-left: 8px;
+        height: 180px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .learn-more-button {
+        margin-left: 80px;
+    }
+    .pet-name {
+        margin-left:  80px;
+    }
+    .pet-origin {
+        margin-left:  80px;
+    }
+    .slick-slide img {
+        width: 160px;
+        margin-left: 5px;
+        height: 150px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .learn-more-button {
+        margin-left: 55px;
+    }
+    .pet-name {
+        margin-left:  55px;
+    }
+    .pet-origin {
+        margin-left:  55px;
+    }
+    .slick-slide img {
+        width: 120px;
+        margin-left: 12px;
+        height: 150px;
+        margin-top: 15px;
+    }
+}

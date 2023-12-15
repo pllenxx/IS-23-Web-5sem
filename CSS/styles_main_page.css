@@ -3,9 +3,8 @@ body {
     background-color: lightgray;
     background-size: 110px 110px, cover;
     background-repeat: repeat, no-repeat;
-    width: 1280px;
-    height: 908px;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -47,17 +46,11 @@ header {
     margin-left: 60px;
 }
 
-@media (max-width: 800px) {
-    .dog-photo {
-        display: none;
-    }
-}
-
 .menu {
     margin-top: 40px;
     display: flex;
     gap: 35px;
-    white-space: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
 }
 
@@ -113,12 +106,11 @@ link {
 }
 
 .dog-photo {
-    width: 698px;
-    height: 728px;
-    flex-shrink: 0;
+    max-width: 698px;
+    height: auto;
     padding-left: 300px;
-    margin-right: 40px;
     margin-top: 128px;
+
 }
 
 .content {
@@ -171,14 +163,13 @@ link {
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 22.1px */
+    line-height: 130%;
     letter-spacing: 1.02px;
     text-decoration: none;
 }
 
 footer {
     width: 1280px;
-    /*height: 350px;*/
     flex-shrink: 0;
     background-image: url("data/bg.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%);
     background-color: lightgray;
@@ -198,43 +189,122 @@ footer {
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 45.5px */
+    line-height: 130%;
     letter-spacing: 2.1px;
 }
 
 .footer-text{
     color: #F1CDB3;
-    /* h4 */
     font-family: Georgia;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 115%; /* 23px */
+    line-height: 115%;
     letter-spacing: 1.2px;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1280px) {
+    header {
+        flex-direction: column;
+        align-items: start;
+        gap: 4px;
+    }
+    .name .main-name{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .name .description{
+        font-size: 15px;
+        margin-top: -10px;
+        margin-left: 45px;
+    }
+    .menu {
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        margin-left: 40px;
+        white-space: nowrap;
+        justify-content: flex-end;
+    }
+
     .dog-photo {
-        display: none;
-    }
-
-    .grid-container {
-        display: none;
+        padding-left: 10px;
     }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media screen and (max-width: 1180px) {
     .wrapper {
-        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        align-items: center;
+    }
+    .dog-photo {
+        margin-left: 250px;
+    }
+    .menu {
+        gap: 30px;
+        margin-left: 1px;
+    }
+    .main-content,
+    #header-text,
+    #main-text,
+    #catalog {
+        text-align: center;
+        margin-left: 0;
+    }
+    #header-text {
+        width: auto;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    #main-text {
+        font-size: 18px;
+    }
+    #catalog {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 21px;
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (max-width: 800px) {
     .wrapper {
-        width: 90%;
+        flex-direction: column;
     }
-
-    .img {
-        width: 100%;
+    .menu {
+        gap: 10px;
+    }
+    .name {
+        margin-left: 80px;
+    }
+    .main-content,
+    #header-text,
+    #main-text,
+    #catalog {
+        text-align: center;
+        margin-left: 0;
+    }
+    #header-text {
+        width: auto;
+        font-size: 50px;
+        margin-top: 60px;
+    }
+    #main-text {
+        font-size: 18px;
+    }
+    #catalog {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 21px;
     }
 }

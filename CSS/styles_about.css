@@ -1,17 +1,15 @@
 body {
-    width: 1280px;
-    height: 800px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
     background: #FFF;
 }
 
 header {
     display: flex;
-    width: 1280px;
+    flex-direction: row;
     height: 60px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    width: 100%;
     gap: 200px;
 }
 
@@ -19,7 +17,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-top: 60px;
 }
 
 .main-name {
@@ -38,26 +35,19 @@ header {
     color: #292929;
     font-family: Arial;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.3px;
     text-align: left;
     margin-top: 5px;
-    margin-left: 60px;
-}
-
-@media (max-width: 800px) {
-    .dog-photo {
-        display: none;
-    }
+    margin-left: 10px;
 }
 
 .menu {
     margin-top: 40px;
     display: flex;
     gap: 35px;
-    white-space: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
 }
 
@@ -71,7 +61,7 @@ link {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 24px */
+    line-height: 160%;
     text-decoration: none;
 }
 
@@ -93,7 +83,7 @@ link {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 24px */
+    line-height: 160%;
 }
 
 .nav-item:hover {
@@ -103,7 +93,7 @@ link {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 24px */
+    line-height: 160%;
 }
 
 .wrapper {
@@ -122,7 +112,6 @@ link {
 .dog-cat-photo {
     width: 300px;
     height: 408px;
-    /*flex-shrink: 0;*/
     margin-top: 80px;
 }
 
@@ -143,7 +132,7 @@ link {
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 45.5px */
+    line-height: 130%;
     letter-spacing: 2.1px;
 }
 
@@ -153,32 +142,112 @@ link {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 24px */
+    line-height: 160%;
     width: 430px;
 }
 
-@media (max-width: 800px) {
-    .dog-photo {
-        display: none;
+@media screen and (max-width: 1400px) {
+    .menu {
+        gap: 10px;
     }
-
-    .grid-container {
-        display: none;
+    header {
+        gap: 100px;
     }
-}
-
-@media (min-width: 800px) and (max-width: 1200px) {
-    .wrapper {
-        width: 90%;
+    #header-text {
+        margin-left: -500px;
     }
-}
-
-@media (min-width: 1200px) {
-    .wrapper {
-        width: 90%;
+    .main-text {
+        margin-left: -500px;
     }
-
-    .img {
+    .dog-cat-photo {
         width: 100%;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        gap: 10px;
+    }
+    header {
+        gap: 100px;
+    }
+    #header-text {
+        margin-left: -500px;
+        font-size: 30px;
+    }
+    .main-text {
+        margin-left: -500px;
+    }
+    .dog-cat-photo {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        gap: 10px;
+    }
+    header {
+        gap: 10px;
+    }
+    #header-text {
+        margin-left: -500px;
+        font-size: 20px;
+    }
+    .main-text {
+        margin-left: -500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        margin-top: 20px;
+    }
+    #header-text{
+        margin-left: -700px;
+    }
+    .dog-cat-photo {
+        width: 100%;
+        margin-top: 1000px;
+        margin-left: 0;
+    }
+    .main-text {
+        margin-left: -700px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #header-text{
+        margin-left: -750px;
+    }
+    .main-text {
+        margin-left: -750px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #header-text{
+        margin-left: -800px;
+    }
+    .main-text {
+        margin-left: -800px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #header-text{
+        margin-left: -900px;
+    }
+    .main-text {
+        margin-left: -900px;
     }
 }
