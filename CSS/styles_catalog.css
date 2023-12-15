@@ -194,7 +194,7 @@ link {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 22.1px */
+    line-height: 130%;
     letter-spacing: 1.02px;
     text-decoration: none;
 }
@@ -399,6 +399,12 @@ link {
         height: 180px;
         margin-top: 15px;
     }
+    .learn-more-button {
+        border-radius: 90px;
+    }
+    #learn-more-button-text {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -417,6 +423,12 @@ link {
         height: 150px;
         margin-top: 15px;
     }
+    .learn-more-button {
+        border-radius: 80px;
+    }
+    #learn-more-button-text {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -434,5 +446,11 @@ link {
         margin-left: 12px;
         height: 150px;
         margin-top: 15px;
+    }
+    .learn-more-button {
+        border-radius: 60px;
+    }
+    #learn-more-button-text {
+        font-size: 13px;
     }
 }
