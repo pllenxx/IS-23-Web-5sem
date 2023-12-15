@@ -188,10 +188,10 @@ link {
     text-decoration: none;
 }
 
-.learn-more-button-text {
+#learn-more-button-text {
     color: #292929;
     font-family: Georgia;
-    font-size: 17px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 22.1px */
@@ -229,7 +229,7 @@ link {
 }
 
 .pets-slider {
-    width: 850px;
+    width: 1050px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -247,6 +247,7 @@ link {
 
 .next-button-arrow {
     margin-top: 295px;
+    margin-right: 30px;
     display: inline-flex;
     padding: 23px 19px;
     flex-direction: column;
